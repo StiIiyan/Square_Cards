@@ -7,5 +7,6 @@
 	"prefix": "square_cards",
 	"main_file": "square_cards.lua",
 	"priority": 0,
-	"version": "1.0.0"
+	"version": "1.0.0",
+    "icon_path": "icon.png"
 }
