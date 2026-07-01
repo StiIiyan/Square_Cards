@@ -5,7 +5,7 @@ priority = 0
 
 
 
-# Make Playing cards square
+# Make Playing cards square (on initialization)
 [[patches]]
 [patches.pattern]
 target = 'card.lua'
@@ -16,5 +16,21 @@ position = 'at'
 payload = '''
 if center.name == "Square Joker" and (center.discovered or self.bypass_discovery_center) or 
     center.set == 'Default' or center.set == 'Enhanced' then 
+'''
+match_indent = true
+
+
+
+# Make Playing cards square (on load)
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = '''
+elseif self.config.center.name == "Square Joker" then
+'''
+position = 'at'
+payload = '''
+elseif self.config.center.name == "Square Joker" or
+    self.config.center.set == 'Default' or self.config.center.set == 'Enhanced' then 
 '''
 match_indent = true
