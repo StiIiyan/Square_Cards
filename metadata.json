@@ -1,0 +1,11 @@
+{
+	"id": "SquareCards",
+	"name": "Square Cards",
+	"display_name": "Square Cards",
+	"author": ["CTEH (aka 3AXAPOCAH)"],
+	"description": "Makes cards square",
+	"prefix": "square_cards",
+	"main_file": "square_cards.lua",
+	"priority": 0,
+	"version": "1.0.0"
+}
